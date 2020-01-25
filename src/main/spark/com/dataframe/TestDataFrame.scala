@@ -24,7 +24,6 @@ object TestDataFrame {
     // idAge.filter(_.age > "") // 编译时报错, int不能跟String比
     // 优点2
     idAgeRDDPerson.filter(_.age > 25) // 直接操作一个个的person对象
-
     sc.stop();
   }
 }
