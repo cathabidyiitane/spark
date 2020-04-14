@@ -6,13 +6,10 @@ package com.rdd
   */
 object SparkRddTest {
   def main(args: Array[String]) {
-
     val data = 1 to 20000
-
     val currntTime = System.currentTimeMillis()
     increase(data.toList)
     println("used time=" + (System.currentTimeMillis() - currntTime))
-
   }
 
   def increase(list: List[Int]): List[Int] = list match {
