@@ -1,6 +1,7 @@
 package com.list
 
 import org.apache.log4j.Logger
+
 /**
   * @ Created by gouyy on 2017-12-17.
   */
@@ -21,19 +22,20 @@ object ListDemo {
     //    }
     //    result.toList
 
-//    val data = 1 to 20000
-//
-//    val currntTime = System.currentTimeMillis()
-//    increase(data.toList)
-//    println("used time=" + (System.currentTimeMillis() - currntTime))
-//
-//
-//    def increase(list: List[Int]): List[Int] = list match {
-//      case List() => List()
-//      case head2 :: tail => (head2 + 1) :: increase(tail)
-//    }
+    //    val data = 1 to 20000
+    //
+    //    val currntTime = System.currentTimeMillis()
+    //    increase(data.toList)
+    //    println("used time=" + (System.currentTimeMillis() - currntTime))
+    //
+    //
+    //    def increase(list: List[Int]): List[Int] = list match {
+    //      case List() => List()
+    //      case head2 :: tail => (head2 + 1) :: increase(tail)
+    //    }
 
-    val  loggered = Logger.getLogger(getClass.getClass)
+    val loggered = Logger.getLogger(getClass.getClass)
+
     def checkArgs(args: Array[String]): Boolean = {
       if (args.length == 5) {
         true
