@@ -20,6 +20,4 @@ object Text {
       */
     data.flatMap(_.split("\t").map((_,1))).reduceByKey(_+_).collect().foreach(println)
   }
-
-
 }

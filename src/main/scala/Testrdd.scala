@@ -14,7 +14,8 @@ object Testrdd {
 
     val rdd01 = sc.makeRDD(List(1, 2, 3, 4, 5, 6, 4, 9, 8, 7, 66, 6, 0))
     // val r01 = rdd01.map { x => x * x }
-    println(rdd01.collect().toString)
-    println(rdd01.distinct.collect().mkString(","))
+//    println(rdd01.collect().toString)
+    println(rdd01.collect.indexOf("0"))
+//    println(rdd01.distinct.collect().mkString(","))
   }
 }

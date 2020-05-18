@@ -10,7 +10,6 @@ object Test2 {
     print(a)
   }
 
-
 //  def main(args: Array[String]): Unit = {
 //    val bro_path= args(0)
 //    print(bro_path)
