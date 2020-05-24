@@ -17,5 +17,4 @@ object FilterDemo {
     println(enevs)
     println(enevs.mkString)
   }
-
 }
