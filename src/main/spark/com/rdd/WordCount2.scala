@@ -1,5 +1,7 @@
 package com.rdd
+
 import org.apache.spark.{SparkConf, SparkContext}
+
 /**
   * Created by gouyangyang on 2018/5/15/015.
   */
