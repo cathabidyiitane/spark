@@ -14,6 +14,7 @@ object SparkflatMap {
     val sqlContext = new SQLContext(sc)
     val arr = sc.parallelize(Array(("A", 1), ("B", 2), ("C", 3)))
     arr.flatMap(x => (x._1 + x._2)).foreach(println)
+    arr.flatMap(x => (x._1)).foreach(print)
     sc.stop()
   }
 }
