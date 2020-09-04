@@ -15,24 +15,19 @@ object QASYY2 {
     val sparkConf = new SparkConf().setAppName("QASYY2").setMaster("local")
     val sc = new SparkContext(sparkConf)
     val sQLContext = new SQLContext(sc)
-
     val schemaString = "id call_type source bill_type call_flag call_date call_time callDuration from_num_attr from_num_attr_cn localNum to_num_attr to_num_attr_cn dialNumber method call_location call_location_cn imsi switch_id from_num_location village_code to_num_location to_location to_location_cn caseID evID starFlag"
-
     val fields = schemaString.split(" ").map(fieldName => fieldName match {
       //case "id" => StructField(fieldName, LongType, false)
       //case "evID" => StructField(fieldName,  LongType, true)
       //case "starFlag" => StructField(fieldName,  LongType, true)
       case _ => StructField(fieldName, StringType, true)
     })
-
     val customSchema = StructType(fields)
-
     val callDFCsv = sQLContext.read.format("csv")
       .schema(customSchema)
       .option("sep", ",")
       .option("header", "true")
-      .load("D:\\github_project\\sparkorscala\\data\\12345.csv")
-
+      .load("D:\\github_project\\sparkorscala\\data\\666666666666.csv")
     //callDFCsv.foreach(x => println(x))
     callDFCsv.registerTempTable("calllistbean_bak")
     //1.清洗源
