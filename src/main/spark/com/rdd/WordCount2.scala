@@ -18,5 +18,6 @@ object WordCount2 {
     val wordTuple = words.map((_, 1))
     val wcRDD = wordTuple.reduceByKey((_ + _))
     wcRDD.foreach(println)
+    sc.stop()
   }
 }
