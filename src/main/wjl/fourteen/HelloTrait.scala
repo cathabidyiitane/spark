@@ -42,19 +42,19 @@ trait Logger {
   //      println("Hi, I'm " + name + ", I'm glad to make friends with you, " + p.name)
   //      log("makeFriends methdo is invoked with parameter Person[name=" + p.name + "]")
   //    }
-}
+//}
 
 // 在Trait 中定义具体字段
 // scala 中的Triat可以定义具体的field，此时继承trait的类自动获得了trait 中定义的field
 // 但是这种获取field的方式与继承class是不同的，如果是继承class获取的field,实际是定义在父类中的；而继承trait获取的field，就直接被添加到了类中
-trait Person {
-  val eyeNum: Int = 2
-}
+//trait Person {
+//  val eyeNum: Int = 2
+//}
 
 
-class Student(val name: String) extends Person {
-  def sayHello = println("Hi, I'm " + name + ", I have " + eyeNum + " eyes.")
-}
+//class Student(val name: String) extends Person {
+//  def sayHello = println("Hi, I'm " + name + ", I have " + eyeNum + " eyes.")
+//}
 
 }
 
