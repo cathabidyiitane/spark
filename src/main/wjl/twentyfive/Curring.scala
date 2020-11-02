@@ -12,13 +12,9 @@ object Curring {
     def multiple(x: Int, y: Int) = x * y
 
     def multipleOne(x: Int) = (y: Int) => x * y
-
     println(multipleOne(6)(7)) //x->6 y->7   row result: 42
-
     def curring(x: Int)(y: Int) = x * y
-
     println(curring(10)(10))
-
     val a = Array("Hello", "Spark")
     val b = Array("hello", "spark") //x->6 y->7   row result: 42100
     println(a.corresponds(b)(_.equalsIgnoreCase(_))) //row result:  true
