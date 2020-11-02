@@ -19,5 +19,4 @@ object Test2 {
   }
   // 样板类
   case class Person(name: String, age: Int)
-
 }
