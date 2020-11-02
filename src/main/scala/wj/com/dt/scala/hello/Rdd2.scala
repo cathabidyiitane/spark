@@ -8,9 +8,7 @@ import org.apache.spark.SparkConf
   * https://www.imooc.com/article/19882
   */
 object Rdd2 {
-
   val sparkConf = new SparkConf().setAppName("Rdd2").setMaster("local")
-
 
 
 

@@ -1,0 +1,27 @@
+https://www.cnblogs.com/liuwei6/p/6558785.html
+
+scala 高级编程
+
+一,函数式编程
+
+ Scala中的函数可以独立存在， 不需要依赖任 何类和对象
+ def 放在类中就是方法;放在外面就是函数
+
+ 1.将函数赋值给变量
+    Scala中的函数就是一等公民，可以独立定义，独立存在，而且可以直接将函数作为值赋给变量
+    Scala的语法规定，将函数变量赋值时，必须在函数后面加上空格和下划线
+
+    def sayHello(name:String){println("Hello"+name)}
+    val sayHelloFunc =sayHello _
+    sayHelloFunc("leo")
+
+ 2.匿名函数
+   Scala 中，函数也可以不需要命名，此时函数被称为匿名函数。
+   可以直接定义函数后，将函数赋值给某个变量； 也可以将直接定义的匿名  函数传入其他函数之中
+   Scala定义匿名函数的语法规则：  (参数名: 参数类型) => 函数体
+   这种匿名函数的语法必须深刻理解和掌握， 在Spark的中有大量这样的语法。
+   val sayHelloFunc = (name: String) => println("Hello, " + name)
+
+
+
+
