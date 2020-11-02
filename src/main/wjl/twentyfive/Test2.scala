@@ -8,7 +8,6 @@ object Test2 {
     val alice = new Person("Alice", 25)
     val bob = new Person("Bob", 32)
     val charlie = new Person("Charlie", 32)
-
     for (person <- List(alice, bob, charlie)) {
       person match {
         case Person("Alice", 25) => println("Hi Alice!")
@@ -20,4 +19,5 @@ object Test2 {
   }
   // 样板类
   case class Person(name: String, age: Int)
+
 }
