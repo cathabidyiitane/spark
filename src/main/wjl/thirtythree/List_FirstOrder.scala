@@ -1,6 +1,8 @@
 package thirtythree
 
 /**
+  * List的一阶函数操作代码实战详解
+  *
   * @author gouyangyang on 2018/10/23/023 09:02
   *         https://blog.csdn.net/sd637/article/details/48574565?utm_source=blogxgwz8
   */
@@ -65,7 +67,6 @@ object List_FirstOrder {
     //Array --> List     def toList: List[Char]
     println("toList " + array.toList)
 
-
     //将List的内容拷贝到一个数组中
     val new_array = new Array[Char](10)
     //def copyToArray[B >: Char](xs: Array[B], start: Int): Unit
@@ -73,10 +74,8 @@ object List_FirstOrder {
     new_array.foreach(print) //   abcdef
     println
 
-
     val iterator = data.toIterator //val iterator: Iterator[Char]
     println(iterator.next) //a
     println(iterator.next) //b
   }
-
 }
