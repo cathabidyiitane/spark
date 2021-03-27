@@ -17,7 +17,7 @@ object List_FirstOrder {
     //求长  .length方法来判断集合是否为空 效率不高 应多用 isEmpty
     println(List(1, 2, 3, 4).length) //4
 
-    val bigData = List("Hadoop", "Spark", "Kaffka")
+    val bigData = List("Hadoop", "Spark", "Kafka")
     //获得最后一个元素
     println("last " + bigData.last) //last Kaffka
     //获得除去最后一个元素的其他元素
