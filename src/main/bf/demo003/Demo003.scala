@@ -16,7 +16,7 @@ object Demo003 {
   //    println(name3)
   //  }
   def main(args: Array[String]): Unit = {
-    val conf = new SparkConf().setAppName("Demo003")
+    val conf = new SparkConf().setAppName("Demo003").setMaster("local[*]")
     val sc = new SparkContext(conf)
     val sqlContext = new HiveContext(sc) // 或者SQLContext
 
