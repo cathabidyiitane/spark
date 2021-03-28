@@ -24,9 +24,9 @@ public class JavaWordCount {
             System.err.println("Usage: JavaWordCount <file>");
             System.exit(1);
         }
-        SparkConf sparkConf = new SparkConf().setAppName("JavaWordCount");
+        SparkConf sparkConf = new SparkConf().setAppName("JavaWordCount").setMaster("local[*]");
         JavaSparkContext ctx = new JavaSparkContext(sparkConf);
-        JavaRDD<String> lines = ctx.textFile(args[0], 1);
+        JavaRDD<String> lines = ctx.textFile("D:\\github_project\\sparkorscala\\data\\data.txt", 1);
 
         JavaRDD<String> words = lines.flatMap(new FlatMapFunction<String, String>() {
             public Iterable<String> call(String s) {

@@ -4,7 +4,6 @@ package scalaactualcombat.one
   * Created by gouyangyang on 2018/3/26/026.
   */
 object HelloDemo {
-
   //  def main(args: Array[String]): Unit = {
   //    val arr = "Hello World".split(" ").map(_.trim)
   //    arr.foreach(println)
