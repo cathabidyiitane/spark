@@ -14,6 +14,7 @@ object ListMap {
 
     // tolist 将字符串重新转换为list,reverse.mkString将字符串颠倒,输出结果 为list(alacS,poodaH,krapS）
     println(data.map(_.toList))
+
     println(data.flatMap(_.toList))
 
     //结果为：list（S,c,a,l,a,H,a,d,o,o,p,S,p,a,r,k）
